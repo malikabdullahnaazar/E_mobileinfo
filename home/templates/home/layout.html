@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Mobile Info</title>
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    </script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/nav.css'%} ">
+    <link rel="stylesheet" href="{% static 'home/css/maincard.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/button.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/csscard.css' %}">
+   
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 6rem;
+}
+
+.nav-content {
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.right-nav {
+    padding-left: 85%;
+}
+
+.logo {
+    display: block;
+}
+
+.top {
+    display: flex;
+    position: relative;
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+}
+
+.left-box {
+    position: absolute;
+    left: 15%;
+    margin-top: 10%;
+    width: 40%;
+}
+
+.left-box h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: normal;
+}
+
+.left-box h2 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+}
+
+.right-box {
+    position: absolute;
+    margin-top: 10% ;
+    right: 9%;
+    width: 30%;
+}
+
+.right-box h2 {
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.5rem;
+    margin-top : 5%;
+}
+
+.right-box p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: lighter;
+     
+}
+
+.right-box button {
+    border-radius: 5rem;
+    margin-top: 5%;
+    border: 0rem;
+    height: 6rem;
+    width: 20rem;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #e84a90;
+    letter-spacing: 0.3rem;
+}
+
+.right-box button:hover {
+    background-color: #030c7e;
+    cursor: pointer;
+}
+
+.sec2 {
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+.sec2 h2 {
+    font-size: 7rem;
+    font-weight: normal;
+}
+
+.sec2 p {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: auto;
+    width: 65%;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
+.sec2contents {
+    display: flex;
+}
+
+.sec2contents .left {
+    width: 50%;
+}
+
+.sec2contents .left img {
+    width: 100%;
+}
+
+.sec2contents .right {
+    width: 50%;
+    right: 0rem;
+}
+
+.sec2contents .right .right-r {
+    display: flex;
+}
+
+.sec2contents .right .right-rr {
+    display: flex;
+}
+
+.sec2contents .right .box1 {
+    width: 60%;
+    height: 25rem;
+    margin-right: 5%;
+    background-color: #e84a90;
+}
+
+.sec2contents .right .box2 {
+    width: 60%;
+    height: 25rem;
+    margin-right: 5%;
+    background-color: #e5e5e5;
+}
+
+.sec2contents .right .box3 {
+    width: 60%;
+    height: 25rem;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: #e5e5e5;
+}
+
+.sec2contents .right .box4 {
+    width: 60%;
+    height: 25rem;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: #545af8;
+}
+
+.sec3 {
+    text-align: center;
+    margin-top: 5%;
+    background-color: #e5e5e5;
+}
+
+.sec3-contents {
+    background-color: #e5e5e5;
+}
+
+.sec3 .sec3-contents h2 {
+    font-size: 7rem;
+    font-weight: normal;
+    padding-top: 5%;
+}
+
+.sec3 .sec3-contents p {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.sec3 .sec3-contents img {
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.sec4 {
+    display: flex;
+    position: relative;
+}
+
+.sec4 .sec4-left {
+    width: 60%;
+    margin: 2%;
+    position: absolute;
+}
+
+.sec4 .sec4-left img {
+    width: 100%;
+}
+
+.sec4-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(#545af8, #e84a90);
+    position: absolute;
+    top: 8rem;
+    right: 30rem;
+   
+}
+
+.sec4 .sec4-right {
+    width: 35%;
+    height: 50%;
+    margin-left: 63%;
+    margin-top: 12%;
+    background-color: #e5e5e5;
+    text-align: center;
+    z-index: 1;
+}
+
+.sec4 .sec4-right h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
+.sec4 .sec4-right p {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 10%;
+    text-align: left;
+}
+
+.sec4 .sec4-right button {
+    border-radius: 5rem;
+    margin-top: 5%;
+    border: 0rem;
+    height: 6rem;
+    width: 20rem;
+    font-size: 1.8rem;
+    background-color: #545af8;
+    letter-spacing: 0.3rem;
+    margin-bottom: 5%;
+}
+.sec4 .sec4-right button:hover
+{
+    cursor: pointer;
+
+    color: white;
+        background-color: #000247;
+}
+
+.sec5 {
+    background-image: linear-gradient(#545af8, #e84a90);
+    margin-top: 5%;
+    height: 70vh;
+}
+
+.sec5 .boxes {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 13%;
+}
+
+.sec5 .boxes .box1,
+.boxes .box2,
+.boxes .box3,
+.boxes .box4,
+.boxes .box5 {
+    background-color: white;
+    width: 20%;
+    margin-top: 7%;
+    margin-bottom: 6%;
+    height: 15rem;
+    text-align: center;
+    box-shadow: 5px 5px #33333357;
+}
+
+.sec5 .boxes .box1,
+.boxes .box3,
+.boxes .box5 {
+    margin-top: 15%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.sec5 .boxes .box1 h2,
+.boxes .box2 h2,
+.boxes .box3 h2,
+.boxes .box4 h2,
+.boxes .box5 h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 20%;
+    color: #e84a90;
+}
+
+.sec5 .boxes .box1 p,
+.boxes .box2 p,
+.boxes .box3 p,
+.boxes .box4 p,
+.boxes .box5 p {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 8%;
+    color: #4c615a;
+}
+
+.sec5 .boxes .box1 a,
+.box2 a,
+.box3 a,
+.box4 a,
+.box5 a {
+    font-size: 2rem;
+    color: #4c615a;
+}
+.contact {
+    margin-top: 10%;
+    width: 100%;
+    height: 90vh;
+    background-color: #e5e5e5;
+    position: relative;
+}
+
+.contact .contback {
+    width: 100%;
+    height: 35%;
+    background-image: linear-gradient(rgb(85,90,248) ,rgb(231,74,144));
+    position: absolute;
+    top: 32.5%;
+}
+
+.contact .contcontent {
+    width: 70%;
+    height: 80%;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    border-radius: 15px;
+    display: flex;
+}
+
+
+
+.contact .contcontent .form {
+    padding-top: 50px;
+padding-left: 200px;
+padding-left: 300px;
+    width: 60%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+ 
+
+ 
+.contact .contcontent .form .fields {
+    width: 80%;
+    height: 70%;
+    margin-left: 12%;
+    margin-top: 15%;
+}
+
+.contact .contcontent .form .fields input, textarea {
+    width: 700px;
+    border: none;
+    font-size: 16px;
+    padding: 15px 5px;
+    margin-bottom: 10px;
+    background-color: #e5e5e5;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+textarea
+{
+    margin-bottom: 30px;
+}
+
+ 
+
+.contact .contcontent .form .fields .mess {
+    display: none;
+}
+
+textarea {
+    padding-top: 2px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
+    height: 30%;
+}
+
+textarea::placeholder {
+    color: #757575;
+}
+#time 
+{
+	display: flex;
+	gap: 40px;
+}
+
+#time .circle
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#time .circle svg 
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transform: rotate(270deg);
+}
+#time .circle svg circle 
+{
+	width: 100%;
+	height: 100%;
+	fill: transparent;
+	stroke-width: 4;
+	stroke-linecap: round;
+	stroke: #191919;
+	transform: translate(5px,5px);
+}
+#time .circle svg circle:nth-child(2)
+{
+	stroke: var(--clr);
+	stroke-dasharray: 440;
+}
+
+#time div 
+{
+	position: absolute;
+	text-align: center;
+	font-weight: 500;
+	color: #fff;
+	font-size: 1.5em;
+}
+#time div span 
+{
+	position: absolute;
+	transform: translateX(-50%) translateY(-10px);
+	font-size: 0.35em;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+#time .ap 
+{
+	position: relative;
+	font-size: 1em;
+	transform: translateX(-20px);
+}
+
+
+.dots 
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	z-index: 10;
+}
+.dots::before 
+{
+	content: '';
+	position: absolute;
+	top: -3px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: var(--clr);
+	box-shadow: 0 0 20px var(--clr),
+	0 0 60px var(--clr);
+}
+   </style>
+    
+</head>
+<body>
+    <nav>{% load static %}
+        <img src="{% static 'images/logo.png' %}" alt="img">
+       <ul class="navigation">
+           <li><a href="#" style="--clr:#6eff3e"><span>Home</span><i></i></a></li>
+           <li><a href="#contact" style="--clr:#6eff3e"><span>Contact</span><i></i></a></li>
+           <li><a href="{% url 'about' %}" style="--clr:#6eff3e"><span>About</span><i></i></a></li>
+           <li><a href="{% url 'login' %}" style="--clr:#ff2972"><span>L O G I N</span><i></i></a></li>
+           <li><a href="{% url 'register' %}" style="--clr:#ff2972"><span>S I G N U P</span><i></i></a></li>
+       </ul>
+   </nav>
+    {% block body %}
+    {% endblock %}
+    <script src="{% static 'home/javascript/index.js' %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

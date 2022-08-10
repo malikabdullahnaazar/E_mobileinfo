@@ -1,0 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav
+{
+    height: 7vh;
+    background: rgb(255, 255, 255); 
+}
+.navigation
+{
+    display: flex;
+    margin-top: -2vh;
+    margin-left: 50vw;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    
+}
+ 
+nav img
+{
+    padding-top: 10px;
+    padding-left: 15%;
+}

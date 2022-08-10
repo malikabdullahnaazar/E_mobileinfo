@@ -1,0 +1,289 @@
+{% extends "home/layout.html" %}
+{% block body %}
+<div class="menuToggle"></div>
+<nav>
+     <img src="https://capp.nicepage.com/68777b3f6a44ad65b1c1af2b493d743d5c9c6497/images/default-logo.png" alt="img">
+    <ul class="navigation">
+
+        <li><a href="#" style="--clr:#6eff3e"><span>Home</span><i></i></a></li>
+        <li><a href="#contact" style="--clr:#6eff3e"><span>Contact</span><i></i></a></li>
+        <li><a href="{% url 'about' %}" style="--clr:#6eff3e"><span>About</span><i></i></a></li>
+        <li><a href="{% url 'login' %}" style="--clr:#ff2972"><span>S I G N I N</span><i></i></a></li>
+        <li><a href="{% url 'register' %}" style="--clr:#ff2972"><span>S I G N U P</span><i></i></a></li>
+    </ul>
+</nav>
+
+
+{% load static %}
+<section class="top">
+    <img
+        src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/ded35178be62548bbaf27fff/7d4f0734-43ed-4304-80cb-7ba55a2d7c64.jpg">
+    <div class="bars"></div>
+    </div>
+
+    <div class="left-box">
+
+        <div id="time">
+            <h2 style="color: rgb(0, 0, 0) ;">Colck</h2>
+            <div class="circle" style="--clr:#ff2972;">
+                <div class="dots hr_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh"></circle>
+                </svg>
+                <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--clr:#fee800;">
+                <div class="dots min_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="circle" style="--clr:#04fc43;">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+            <div class="ap">
+                <div id="ampm">AM</div>
+            </div>
+        </div><br><br>
+        <h2 style="margin-top: 10%;font-size:10em;">Best Mobiles</h2>
+        <h1 style="margin-top: 10%;font-size:5em;">We have collection of all best Mobiles...</h1>
+    </div>
+    <div class="right-box">
+        <h1 style="color: white; font-size:3em; ">I-phone 13 Pro Max</h1>
+        <div class="mcard">
+            <div class="imgBx">
+                <img src="{% static 'home/pics/ip1.jpg'%}">
+            </div>
+            <div class="details">
+                <h3 s>I-phone 13 Pro Max<br><span>Smart Phone</span></h3>
+                <h4>Product Details</h4>
+                <p></p>
+                <h4>Size</h4>
+                <ul class="size">
+                    <li>6.1</li>
+                    <li>6.7</li>
+                </ul>
+                <h4>Color</h4>
+                <ul class="color">
+                    <li>Blue</li>
+                    <li>Graphite</li>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Alpine green</li>
+                </ul>
+                <div class="group">
+                    <h2><sup>$</sup>1099<small>.99</small></h2>
+                    <a href="#" style="--clr:#6eff3e"><span>BuyNow</span><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="sec2">
+    <div class="sec2-heading">
+        <h2>Best Brands in World</h2>
+        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+    </div>
+    <div class="sec2contents">
+        <div class="left">
+            <img src="{% static 'home/pics/img_sec2.jpg'%}">
+        </div>
+        <div class="right">
+            <div class="right-r">
+                <div class="box1">
+                    <h1 style="font-size: xx-large;">I-PHONE </h1><br>
+                     <h3 style="font-size: large;">The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface. The iPhone runs the iOS operating system, and in 2021 when the iPhone 13 was introduced, it offered up to 1 TB of storage and a 12-megapixel camera.</h3>
+                </div>
+                <div class="box2"> 
+                    <h1 style="font-size: xx-large;">SAMSUNG </h1><br>
+                    <h3 style="font-size: large;">Samsung, South Korean company that is one of the world's largest producers of electronic devices. Samsung specializes in the production of a wide variety of consumer and industry electronics, including appliances, digital media devices, semiconductors, memory chips, and integrated systems.</h3>
+                </div>
+            </div>
+            <div class="right-rr">
+                <div class="box3">
+                    <h1 style="font-size: xx-large;">XIAOMI </h1><br>
+                    <h3 style="font-size: large;">Xiaomi is one of the world's leading smartphone companies. The company's market share in terms of smartphone shipments ranked no. 3 globally in the fourth quarter of 2021. smart devices connected to its platform (excluding smartphones and laptops) as of December 31, 2021, excluding smartphones and laptops.</h3>
+                </div>
+                <div class="box4">
+                    <h1 style="font-size: xx-large;">OPPO </h1><br>
+                    <h3 style="font-size: large;">Guangdong Oppo Mobile Telecommunications Corp., Ltd, doing business as OPPO, is a Chinese consumer electronics and mobile communications company headquartered in Dongguan, Guangdong.</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+<section class="sec3">
+    <div class="sec3-contents">
+        <h2>READ ABOUT UPCOMMING MOBILES</h2>
+        <h3 style="font-size: large;">Disclaimer: Mobile phone prices at Mobilemall.pk are updated according to the local mobile brands (Samsung, Huawei, Oppo, Realme, Vivo, Xiaomi, Nokia, Infinix, Tecno, etc) and mobile dealers of Pakistan. But we can’t guarantee that mobile prices are 100% correct. We suggest you visit your nearest mobile shop to get the exact prices. and, only purchase PTA approved mobile phones that have an official brand warranty. The prices at our website can be used for purchasing a mobile phone all across major cities of Pakistan, including Karachi, Lahore, Faisalabad, Rawalpindi, Gujranwala, Peshawar, Multan, Hyderabad, Islamabad, Quetta, Bahawalpur, Sargodha, Sialkot, Sukkur, Larkana, etc.</h3>
+        <img src="{% static 'home/pics/sec3.png'%}">
+    </div>
+
+</section>
+
+<section class="sec4">
+    <div class="sec4-left">
+        {% load static %}
+        <img src="{% static 'home/pics/sec4-left.jpg'%}">
+    </div>
+    <div class="sec4-circle">
+
+    </div>
+    <div class="sec4-right">
+        <h2>Design Perfection</h2>
+        <h1 style="font-size: xx-large;">SAMSUNG S22 ULTRA</h1><br>
+          <img src="{% static 'home/pics/sma.jpg'%}" alt="samsung" style="height:40vh ;width: 25vw;border: 2px solid blue;"><br>
+          <a href="#" style="--clr:#545af8"><span>LEARN MORE</span><i></i></a>
+    </div>
+</section>
+
+<section class="sec5">
+    <div class="boxes">
+        <div class="box1">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="{% static 'home/pics/ip1.jpg'%}">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h2>I PHONE 13 PRO MAX<br><span>$1099.99</span></h2>
+                        <div class="data">
+                            <a href="#" style="--clr:#ff2972"><span>&#9829;</span><i></i></a>
+                            <h3 style="margin-left: 10px;">Black<br><span>Color</span></h3>
+                            <h3>6.8<br><span>Size</span></h3>
+                            <h3 style="margin-right: 10px;margin-left: 10px;">256/8<br><span>Memory</span></h3>
+                            
+                            <a href="#" style="--clr:#ff2972"><span>BUY</span><i></i></a>
+                        </div>
+                        <div class="actionBtn">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="box2">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="{% static 'home/pics/ip3.jpg'%}">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h2>GOOGLE PIXEL 6<br><span>$999.99</span></h2>
+                        <div class="data">
+                            <a href="#" style="--clr:#ff2972"><span>&#9829;</span><i></i></a>
+                            <h3 style="margin-left: 10px;">Black<br><span>Color</span></h3>
+                            <h3>6.8<br><span>Size</span></h3>
+                            <h3 style="margin-right: 10px;margin-left: 10px;">256/8<br><span>Memory</span></h3>
+                            
+                            <a href="#" style="--clr:#ff2972"><span>BUY</span><i></i></a>
+                        </div>
+                        <div class="actionBtn">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="{% static 'home/pics/ip2.jpg'%}">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h2>SAMSUNG S22 ULTRA<br><span>$1000.99</span></h2>
+                        <div class="data">
+                            <a href="#" style="--clr:#ff2972"><span>&#9829;</span><i></i></a>
+                            <h3 style="margin-left: 10px;">Black<br><span>Color</span></h3>
+                            <h3>6.8<br><span>Size</span></h3>
+                            <h3 style="margin-right: 10px;margin-left: 10px;">256/8<br><span>Memory</span></h3>
+                            
+                            <a href="#" style="--clr:#ff2972"><span>BUY</span><i></i></a>
+                        </div>
+                        <div class="actionBtn">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="{% static 'home/pics/ip3.jpg'%}">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h2>GOOGLE PIXEL 6<br><span>$999.99</span></h2>
+                        <div class="data">
+                            <a href="#" style="--clr:#ff2972"><span>&#9829;</span><i></i></a>
+                            <h3 style="margin-left: 10px;">Black<br><span>Color</span></h3>
+                            <h3>6.8<br><span>Size</span></h3>
+                            <h3 style="margin-right: 10px;margin-left: 10px;">256/8<br><span>Memory</span></h3>
+                            
+                            <a href="#" style="--clr:#ff2972"><span>BUY</span><i></i></a>
+                        </div>
+                        <div class="actionBtn">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="{% static 'home/pics/ip2.jpg'%}">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h2>SAMSUNG S22 ULTRA<br><span>$1000.99</span></h2>
+                        <div class="data">
+                            <a href="#" style="--clr:#ff2972"><span>&#9829;</span><i></i></a>
+                            <h3 style="margin-left: 10px;">Black<br><span>Color</span></h3>
+                            <h3>6.8<br><span>Size</span></h3>
+                            <h3 style="margin-right: 10px;margin-left: 10px;">256/8<br><span>Memory</span></h3>
+                            
+                            <a href="#" style="--clr:#ff2972"><span>BUY</span><i></i></a>
+                        </div>
+                        <div class="actionBtn">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section class="contact" id="contact" >
+    <div class="contback"></div>
+    <div class="contcontent">
+       
+        <div class="form">
+            <div class="fields">
+                <form action="{%  url 'index' %}" method="post">
+                    {% csrf_token %}
+                    <h1 style="font-size: 36px;font-weight: 400;padding-bottom: 30px;">Contact Info</h1>
+                    <input type="text" name="Name" placeholder="Enter your Name">
+                    <input type="email" name="Email" placeholder="Enter a Valid email address">
+                    <input class="mess" type="textarea" name="Text">
+                    <textarea name="comment" form="Text" placeholder="Enter your Message"></textarea>
+                    <a href="" style="--clr:#ff2972"><span>SUBMIT</span><i></i></a>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,189 @@
+
+.mcard 
+{
+	position: relative;
+	width: 300px;
+	height: 380px;
+	background: #0000;
+	display: flex;
+	box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+.mcard:hover 
+{
+	width: 600px;
+}
+.mcard .imgBx 
+{
+	position: relative;
+	min-width: 300px;
+	height: 100%;
+	background: -webkit-linear-gradient(#545af8, #e84a90); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	
+	
+}
+.mcard .imgBx  img 
+{
+	max-width: 200px;
+	max-height: 250px;
+	transition: 0.5s ease-in-out;
+	border-radius: 20px;
+	 
+}
+.mcard:hover .imgBx  img 
+{
+	transform: rotate(-35deg) translateX(-20px);
+    
+}
+.mcard .details 
+{
+    color: black;
+	position: absolute;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background: #360984;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-direction: column;
+	transition: 0.5s ease-in-out;
+}
+.mcard:hover .details 
+{
+	left: 300px;
+}
+.mcard .details::before 
+{
+	content: '';
+	position: absolute;
+	left: 0px;
+	width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+	z-index: 1;
+}
+.mcard .details h3 
+{
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:3em;
+	line-height: 1em;
+}
+.mcard .details h3 span 
+{
+	font-size: 0.65em;
+	font-weight: 300;
+	opacity: 0.85;
+	text-transform: none;
+}
+.mcard .details h4 
+{
+	color:  white;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.9em;
+	line-height: 1em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+p 
+{
+	color: white ;
+	font-size: 0.8em;
+	opacity: 0.85;
+}
+.size 
+{
+	display: flex;
+	gap: 10px;
+}
+.size li 
+{
+	list-style: none;
+	color: white;
+	font-size: 0.9em;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid white;
+	cursor: pointer;
+	font-weight: 500;
+	opacity: 0.5;
+}
+.size li:hover 
+{
+	background: #fff;
+	color: #4ba9e9;
+	opacity: 1;
+}
+.color 
+{
+	display: flex;
+	gap: 10px;
+}
+.color li 
+{
+	list-style: none;
+	color: rgb(255, 255, 255);
+	font-size: 0.9em;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid rgb(223, 223, 223);
+	cursor: pointer;
+	font-weight: 500;
+	opacity: 0.5;
+}
+.color li:hover 
+{
+	background: #fff;
+	color: #4ba9e9;
+	opacity: 1;
+}
+.group 
+{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+}
+.mcard .details h2 
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 2em;
+}
+.mcard .details h2 sup 
+{
+	font-weight: 300;
+}
+.mcard .details h2 small 
+{
+	font-size: 0.75em;
+}
+.mcard .details a 
+{
+	display: inline-flex;
+	padding: 10px 25px;
+	background: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #4ba9e9;
+}

@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav
+{
+    height: 7vh;
+    background: black; 
+}
+.navigation
+{
+    display: flex;
+    margin-top: -3vh;
+    margin-left: 59vw;
+    padding-left: 10px;
+    
+}
+ 
+nav img
+{
+    padding-top: 15px;
+    padding-left: 15%;
+}
